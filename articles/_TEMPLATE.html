@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    STEP 1: Update these three meta fields for every new article.
+    - title: article title + | Arabic.AI
+    - description: 1-2 sentence summary (used by search engines)
+  ============================================================ -->
+  <title>YOUR ARTICLE TITLE HERE | Arabic.AI</title>
+  <meta name="description" content="YOUR 1-2 SENTENCE ARTICLE DESCRIPTION HERE." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Path from articles/ folder to the shared CSS -->
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+    NAVIGATION — Do not change this block between articles.
+    Links back to index.html and to arabic.ai.
+  ============================================================ -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="site-nav__inner">
+      <a href="../index.html" class="site-nav__logo" aria-label="Arabic.AI home">
+        <div class="site-nav__logo-mark">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="2" y="2" width="5" height="5" rx="1"/>
+            <rect x="9" y="2" width="5" height="5" rx="1" opacity="0.6"/>
+            <rect x="2" y="9" width="5" height="5" rx="1" opacity="0.6"/>
+            <rect x="9" y="9" width="5" height="5" rx="1" opacity="0.3"/>
+          </svg>
+        </div>
+        <span class="site-nav__logo-text">Arabic<span>.AI</span></span>
+      </a>
+      <ul class="site-nav__links">
+        <li><a href="../index.html" class="active">Articles</a></li>
+        <li><a href="https://arabic.ai" target="_blank" rel="noopener">Arabic.AI</a></li>
+        <li><a href="mailto:contact@arabic.ai" class="site-nav__cta">Request a Briefing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+    ARTICLE HERO — Update all items marked with CHANGE THIS.
+    The dark purple header that appears at the top of every article.
+  ============================================================ -->
+  <header class="article-hero">
+    <div class="container article-hero__inner">
+
+      <!-- Breadcrumb: second item = category label (CHANGE THIS) -->
+      <nav class="article-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Articles</a>
+        <span class="article-hero__breadcrumb-sep">/</span>
+        <span>CATEGORY NAME HERE</span>  <!-- e.g. "Agent Evaluation", "LLM Research" -->
+      </nav>
+
+      <!-- Category tag (CHANGE THIS) -->
+      <div class="article-hero__category">
+        <span class="tag" style="background: rgba(247,199,68,0.15); border-color: rgba(247,199,68,0.35); color: var(--accent-gold);">
+          CATEGORY TAG
+        </span>
+      </div>
+
+      <!-- Main title (CHANGE THIS) -->
+      <h1 class="article-hero__title display">
+        YOUR ARTICLE TITLE HERE
+      </h1>
+
+      <!-- One-paragraph subtitle (CHANGE THIS) -->
+      <p class="article-hero__subtitle">
+        YOUR ARTICLE SUBTITLE OR OPENING CONTEXT SENTENCE HERE.
+        Keep this to 2-3 sentences. It previews the article's argument.
+      </p>
+
+      <!-- Byline metadata (CHANGE date, read time, source paper) -->
+      <div class="article-hero__byline">
+        <span class="article-hero__byline-item"><strong>Arabic.AI Editorial</strong></span>
+        <div class="article-hero__byline-sep" aria-hidden="true"></div>
+        <span class="article-hero__byline-item">MONTH YEAR</span>  <!-- e.g. April 2026 -->
+        <div class="article-hero__byline-sep" aria-hidden="true"></div>
+        <span class="article-hero__byline-item">X min read</span>
+        <div class="article-hero__byline-sep" aria-hidden="true"></div>
+        <span class="article-hero__byline-item">Based on: PAPER TITLE (Author et al., YEAR)</span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+    ARTICLE LAYOUT — Two-column: main content + sidebar.
+    Do not change the wrapper structure.
+  ============================================================ -->
+  <div class="article-layout">
+
+    <!-- ─────────────────────────────────────────────────────────
+      MAIN ARTICLE CONTENT
+      Write article body here. Use these elements:
+      - <p>          — body paragraph
+      - <h2 id="…"> — major section heading (also add to TOC)
+      - <h3>         — sub-heading within a section
+      - <h4>         — minor label/callout heading
+      - <blockquote> — pull quote with <p> and optional <cite>
+      - <ul> / <ol>  — lists
+      - <hr class="divider"> — visual break between sections
+      - .stat-grid   — 3-up key numbers (see example below)
+      - .data-callout — single highlighted stat or finding
+    ───────────────────────────────────────────────────────── -->
+    <main class="article-body" id="article-content">
+
+      <!-- Opening paragraphs (no heading needed before first H2) -->
+      <p>
+        YOUR OPENING PARAGRAPH. Start with a concrete observation, specific data point,
+        or scene-setting moment. Avoid abstract statements about AI in general.
+        Get specific immediately.
+      </p>
+
+      <p>
+        YOUR SECOND PARAGRAPH. Establish the argument or framing of the article.
+        Tell the reader what they will understand by the end that they do not
+        understand now.
+      </p>
+
+
+      <!-- OPTIONAL: 3-up stat grid at the top of the article -->
+      <div class="stat-grid">
+        <div class="stat-item">
+          <span class="stat-item__value">XX%</span>
+          <span class="stat-item__label">Short label describing this number</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__value">X,XXX</span>
+          <span class="stat-item__label">Short label describing this number</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-item__value">XX</span>
+          <span class="stat-item__label">Short label describing this number</span>
+        </div>
+      </div>
+
+
+      <!-- SECTION 1 — id must match the href in the TOC sidebar -->
+      <h2 id="section-one">Your First Section Heading</h2>
+
+      <p>Section body paragraph.</p>
+      <p>Section body paragraph continued.</p>
+
+      <!-- OPTIONAL: Pull quote -->
+      <blockquote>
+        <p>
+          The quoted statement goes here. Keep it to 1-3 sentences.
+          Do not use em dashes inside quotes.
+        </p>
+        <cite>Source or attribution</cite>
+      </blockquote>
+
+
+      <!-- SECTION 2 -->
+      <h2 id="section-two">Your Second Section Heading</h2>
+
+      <p>Section body paragraph.</p>
+
+      <!-- OPTIONAL: Single highlighted data point -->
+      <div class="data-callout">
+        <div class="data-callout__label label">Key Finding</div>
+        <div class="data-callout__stat">+XX pp</div>
+        <p class="data-callout__desc">
+          Explanation of what this number means and why it is significant.
+        </p>
+      </div>
+
+      <p>Section body paragraph continued after callout.</p>
+
+
+      <!-- SECTION 3 -->
+      <h2 id="section-three">Your Third Section Heading</h2>
+
+      <p>Section body paragraph.</p>
+
+      <h3>Optional Sub-Heading</h3>
+      <p>Sub-section content.</p>
+
+
+      <!-- SECTION 4: Conclusion — always include -->
+      <h2 id="conclusion">Conclusion</h2>
+
+      <p>
+        Restate the central argument in plain language. Summarize what the evidence showed.
+        End with a practical implication or an open question worth pursuing.
+      </p>
+
+      <!-- Visual divider before source note -->
+      <hr class="divider" />
+
+      <!-- Source attribution — required on every article -->
+      <p class="source-note">
+        This article is an editorial analysis based on: AUTHOR(S) (YEAR). "PAPER TITLE."
+        arXiv:PAPER_ID or Publisher.
+        <a href="PAPER_URL" target="_blank" rel="noopener">View source</a>.
+        Arabic.AI editorial positions are our own.
+      </p>
+
+    </main>
+
+
+    <!-- ─────────────────────────────────────────────────────────
+      SIDEBAR
+      Update: (1) TOC links, (2) related articles.
+      The CTA card does not need to change.
+    ───────────────────────────────────────────────────────── -->
+    <aside class="article-sidebar" aria-label="Article navigation">
+
+      <!-- TABLE OF CONTENTS
+           href values must match the id attributes on your <h2> tags above -->
+      <div class="sidebar-card">
+        <div class="sidebar-card__title">In This Article</div>
+        <ul class="sidebar-toc">
+          <li><a href="#section-one">Your First Section</a></li>
+          <li><a href="#section-two">Your Second Section</a></li>
+          <li><a href="#section-three">Your Third Section</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+          <!-- Add one <li> per <h2> in the article body -->
+        </ul>
+      </div>
+
+      <!-- RELATED ARTICLES
+           Link to 2-3 other articles in the /articles/ folder -->
+      <div class="sidebar-card">
+        <div class="sidebar-card__title">Related Articles</div>
+        <ul class="sidebar-related">
+          <li>
+            <a href="enterprise-ai-agents-still-fail.html">
+              <span class="related-cat">Agent Evaluation</span>
+              Why Enterprise AI Agents Still Fail at Real Work
+            </a>
+          </li>
+          <li>
+            <a href="hierarchy-of-agentic-capabilities.html">
+              <span class="related-cat">Agentic Capabilities</span>
+              The Hierarchy of Agentic Capabilities
+            </a>
+          </li>
+          <li>
+            <a href="breaking-rl-performance-ceiling.html">
+              <span class="related-cat">Reinforcement Learning</span>
+              Breaking the Performance Ceiling in RL
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CTA CARD — Do not change this -->
+      <div class="sidebar-card sidebar-cta">
+        <div class="sidebar-card__title">Work With Arabic.AI</div>
+        <p class="sidebar-cta__body">
+          Arabic.AI builds enterprise-grade AI systems for regulated industries and
+          government across Arabic-speaking markets.
+        </p>
+        <a href="mailto:contact@arabic.ai" class="btn btn--primary">Request a Briefing</a>
+      </div>
+
+    </aside>
+
+  </div><!-- /.article-layout -->
+
+
+  <!-- ============================================================
+    ARTICLE CTA BAND — Do not change.
+  ============================================================ -->
+  <section class="article-cta" aria-label="Contact Arabic.AI">
+    <div class="container">
+      <div class="article-cta__label label">Arabic.AI</div>
+      <h2 class="article-cta__title display">Building AI That Works in Regulated Environments</h2>
+      <p class="article-cta__body">
+        Arabic.AI develops Arabic-first language models and agentic AI systems for
+        government, financial services, and enterprise. Request a technical briefing
+        with our team.
+      </p>
+      <a href="mailto:contact@arabic.ai" class="btn btn--primary">Request a Briefing</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    RELATED ARTICLES SECTION
+    Update the 3 article cards below with neighboring articles.
+    Copy the card structure; only change title, tag, href, excerpt.
+  ============================================================ -->
+  <section class="related-section" aria-label="Related articles">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-header__title">Continue Reading</span>
+      </div>
+      <div class="related-grid">
+
+        <!-- RELATED CARD 1 -->
+        <article class="article-card">
+          <div class="article-card__top-bar"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">
+              <span class="tag">CATEGORY TAG</span>
+            </div>
+            <h3 class="article-card__title" style="font-size: 1.1rem;">
+              <a href="FILENAME.html">Article Title</a>
+            </h3>
+            <p class="article-card__excerpt">
+              1-2 sentence excerpt summarizing the article.
+            </p>
+            <div class="article-card__footer">
+              <span class="article-card__meta">Month Year</span>
+              <a href="FILENAME.html" class="article-card__read-link">Read &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- RELATED CARD 2 -->
+        <article class="article-card">
+          <div class="article-card__top-bar"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">
+              <span class="tag">CATEGORY TAG</span>
+            </div>
+            <h3 class="article-card__title" style="font-size: 1.1rem;">
+              <a href="FILENAME.html">Article Title</a>
+            </h3>
+            <p class="article-card__excerpt">
+              1-2 sentence excerpt summarizing the article.
+            </p>
+            <div class="article-card__footer">
+              <span class="article-card__meta">Month Year</span>
+              <a href="FILENAME.html" class="article-card__read-link">Read &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- RELATED CARD 3 -->
+        <article class="article-card">
+          <div class="article-card__top-bar"></div>
+          <div class="article-card__body">
+            <div class="article-card__category">
+              <span class="tag">CATEGORY TAG</span>
+            </div>
+            <h3 class="article-card__title" style="font-size: 1.1rem;">
+              <a href="FILENAME.html">Article Title</a>
+            </h3>
+            <p class="article-card__excerpt">
+              1-2 sentence excerpt summarizing the article.
+            </p>
+            <div class="article-card__footer">
+              <span class="article-card__meta">Month Year</span>
+              <a href="FILENAME.html" class="article-card__read-link">Read &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER — Do not change -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <div class="site-footer__brand-name">Arabic.AI</div>
+          <p class="site-footer__brand-desc">
+            Arabic-first large language models and enterprise AI systems for government,
+            enterprises, and regulated industries across the Arab world.
+          </p>
+        </div>
+        <div>
+          <div class="site-footer__col-title">Articles</div>
+          <ul class="site-footer__links">
+            <!-- Add a link here every time you publish a new article -->
+            <li><a href="enterprise-ai-agents-still-fail.html">Enterprise AI Agents</a></li>
+            <li><a href="breaking-rl-performance-ceiling.html">RL Performance Ceiling</a></li>
+            <li><a href="how-human-preference-data-should-be-collected.html">Human Preference Data</a></li>
+            <li><a href="hierarchy-of-agentic-capabilities.html">Agentic Capabilities</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="site-footer__col-title">Arabic.AI</div>
+          <ul class="site-footer__links">
+            <li><a href="https://arabic.ai" target="_blank" rel="noopener">Website</a></li>
+            <li><a href="mailto:contact@arabic.ai">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <span>&copy; 2026 Arabic.AI. All rights reserved.</span>
+        <a href="../index.html">Back to all articles</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
