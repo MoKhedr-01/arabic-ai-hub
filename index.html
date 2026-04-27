@@ -3,58 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arabic.AI Research &amp; Technical Articles</title>
+  <title>Arabic.AI — Research &amp; Technical Articles</title>
   <meta name="description" content="Technical articles on Arabic-first AI, enterprise language models, agentic systems, and AI evaluation. Published by Arabic.AI." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Big+Shoulders+Display:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="site-nav__inner">
       <a href="index.html" class="site-nav__logo" aria-label="Arabic.AI home">
-        <div class="site-nav__logo-mark">
-          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2" y="2" width="5" height="5" rx="1"/>
-            <rect x="9" y="2" width="5" height="5" rx="1" opacity="0.6"/>
-            <rect x="2" y="9" width="5" height="5" rx="1" opacity="0.6"/>
-            <rect x="9" y="9" width="5" height="5" rx="1" opacity="0.3"/>
-          </svg>
-        </div>
-        <span class="site-nav__logo-text">Arabic<span>.AI</span></span>
+        <span class="site-nav__wordmark">arabic<span class="accent">.ai</span></span>
       </a>
       <ul class="site-nav__links">
         <li><a href="index.html" class="active">Articles</a></li>
-        <li><a href="https://arabic.ai" target="_blank" rel="noopener">Arabic.AI</a></li>
-        <li><a href="mailto:contact@arabic.ai" class="site-nav__cta">Request a Briefing</a></li>
+        <li><a href="https://arabic.ai" target="_blank" rel="noopener">arabic.ai</a></li>
+        <li><a href="mailto:contact@arabic.ai" class="site-nav__cta">
+          Request a Briefing
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="container hero__inner">
-      <div class="hero__tag label">Technical Articles</div>
-      <h1 class="hero__title display">Research &amp; Analysis<br>from Arabic.AI</h1>
-      <p class="hero__subtitle">
+      <div class="hero__eyebrow">
+        <div class="pulse"></div>
+        Technical Articles
+      </div>
+      <h1 class="hero__title">Research<br>&amp; <span class="accent">Analysis.</span></h1>
+      <p class="hero__lead">
         Long-form technical articles on enterprise AI systems, Arabic-first language models,
         agentic evaluation, and the state of AI in regulated industries.
+        Published by Arabic.AI.
       </p>
-      <div class="hero__meta">
-        <span class="hero__meta-item"><strong>4</strong> Articles Published</span>
-        <span class="hero__meta-item"><strong>Topics:</strong> Agents, Evaluation, LLMs, RL</span>
-        <span class="hero__meta-item"><strong>Audience:</strong> Technical leaders, researchers, enterprise teams</span>
+      <div class="hero__actions">
+        <a href="mailto:contact@arabic.ai" class="btn btn-primary btn-lg">
+          Request a Briefing
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#articles" class="btn btn-ghost btn-lg">Browse Articles</a>
+      </div>
+      <div class="hero__stats">
+        <div>
+          <span class="hero__stat-num">4</span>
+          <span class="hero__stat-label">Articles published</span>
+        </div>
+        <div>
+          <span class="hero__stat-num">2026</span>
+          <span class="hero__stat-label">All current</span>
+        </div>
+        <div>
+          <span class="hero__stat-num">4</span>
+          <span class="hero__stat-label">Research topics</span>
+        </div>
+        <div>
+          <span class="hero__stat-num">EN</span>
+          <span class="hero__stat-label">Language · Arabic coming</span>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- ABOUT STRIP -->
   <div class="about-strip">
     <div class="container about-strip__inner">
-      <div class="about-strip__line"></div>
+      <div class="about-strip__index">/ About</div>
       <p class="about-strip__text">
         <strong>Arabic.AI</strong> builds Arabic-first large language models and enterprise AI infrastructure
         for government, regulated industries, and large-scale Arabic-speaking markets.
@@ -63,83 +79,73 @@
     </div>
   </div>
 
-  <!-- MAIN ARTICLE GRID -->
-  <main class="article-grid-section">
+  <main class="article-index" id="articles">
     <div class="container">
 
-      <div class="section-header">
-        <span class="section-header__title">Latest Articles</span>
-        <span class="section-header__count">4 articles</span>
+      <div class="sec-head">
+        <div class="sec-index">/ Articles</div>
+        <div>
+          <h2 class="sec-title">Latest <span class="accent">Research.</span></h2>
+          <p class="sec-lead">Analysis of the research shaping enterprise AI, agentic systems, and language model evaluation — with a focus on what it means for Arabic-speaking markets.</p>
+        </div>
       </div>
 
       <div class="article-grid">
 
-        <!-- FEATURED CARD -->
-        <article class="article-card article-card--featured">
-          <div class="article-card__top-bar"></div>
-          <div class="article-card__body">
-            <div class="article-card__category">
-              <span class="tag">Agent Evaluation</span>
-            </div>
-            <h2 class="article-card__title">
-              <a href="articles/enterprise-ai-agents-still-fail.html">
-                Why Enterprise AI Agents Still Fail at Real Work
-              </a>
-            </h2>
-            <p class="article-card__excerpt">
-              Frontier models from OpenAI, Google, and Anthropic solve fewer than 35 percent of tasks
-              in realistic enterprise environments when held to expert-authored rubric criteria.
-              This article examines what the EnterpriseBench CoreCraft study reveals about the gap between
-              benchmark performance and production readiness, and what it means for organizations deploying
-              agentic AI in regulated workflows.
+        <!-- Featured -->
+        <article class="card card--featured">
+          <div class="card__body">
+            <span class="card__cat">/ Agent Evaluation</span>
+            <a href="articles/enterprise-ai-agents-still-fail.html" class="card__title">
+              Why Enterprise AI Agents Still Fail at Real Work
+            </a>
+            <p class="card__excerpt">
+              Frontier models from OpenAI, Google, and Anthropic solve fewer than 35 percent
+              of tasks in realistic enterprise environments when held to expert-authored rubric
+              criteria. This article examines what the EnterpriseBench CoreCraft study reveals
+              about the gap between benchmark performance and production readiness, and what it
+              means for organizations deploying agentic AI in regulated workflows.
             </p>
-            <div class="article-card__footer">
-              <span class="article-card__meta">April 2026 &nbsp;&middot;&nbsp; 12 min read</span>
-              <a href="articles/enterprise-ai-agents-still-fail.html" class="article-card__read-link">
-                Read article &rarr;
+            <div class="card__footer">
+              <span class="card__meta">Apr 2026 · 12 min read</span>
+              <a href="articles/enterprise-ai-agents-still-fail.html" class="card__read">
+                Read
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
               </a>
             </div>
           </div>
         </article>
 
-        <!-- SIDE STACK -->
-        <div style="grid-column: span 4; display: flex; flex-direction: column; gap: var(--space-md);">
+        <!-- Side stack -->
+        <div style="grid-column: span 4; display: flex; flex-direction: column; gap: 20px;">
 
-          <article class="article-card article-card--side">
-            <div class="article-card__top-bar"></div>
-            <div class="article-card__body">
-              <div class="article-card__category">
-                <span class="tag">Reinforcement Learning</span>
-              </div>
-              <h2 class="article-card__title">
-                <a href="articles/breaking-rl-performance-ceiling.html">
-                  Breaking the Performance Ceiling in Reinforcement Learning
-                </a>
-              </h2>
-              <div class="article-card__footer">
-                <span class="article-card__meta">April 2026 &nbsp;&middot;&nbsp; 10 min read</span>
-                <a href="articles/breaking-rl-performance-ceiling.html" class="article-card__read-link">
-                  Read &rarr;
+          <article class="card card--side" style="flex: 1;">
+            <div class="card__body">
+              <span class="card__cat">/ Reinforcement Learning</span>
+              <a href="articles/breaking-rl-performance-ceiling.html" class="card__title">
+                Breaking the Performance Ceiling in Reinforcement Learning
+              </a>
+              <div class="card__footer">
+                <span class="card__meta">Apr 2026 · 10 min</span>
+                <a href="articles/breaking-rl-performance-ceiling.html" class="card__read">
+                  Read
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </div>
           </article>
 
-          <article class="article-card article-card--side">
-            <div class="article-card__top-bar"></div>
-            <div class="article-card__body">
-              <div class="article-card__category">
-                <span class="tag">LLM Evaluation</span>
-              </div>
-              <h2 class="article-card__title">
-                <a href="articles/how-human-preference-data-should-be-collected.html">
-                  How Human Preference Data Should Actually Be Collected
-                </a>
-              </h2>
-              <div class="article-card__footer">
-                <span class="article-card__meta">April 2026 &nbsp;&middot;&nbsp; 11 min read</span>
-                <a href="articles/how-human-preference-data-should-be-collected.html" class="article-card__read-link">
-                  Read &rarr;
+          <article class="card card--side" style="flex: 1;">
+            <div class="card__body">
+              <span class="card__cat">/ LLM Evaluation</span>
+              <a href="articles/how-human-preference-data-should-be-collected.html" class="card__title">
+                How Human Preference Data Should Actually Be Collected
+              </a>
+              <div class="card__footer">
+                <span class="card__meta">Apr 2026 · 11 min</span>
+                <a href="articles/how-human-preference-data-should-be-collected.html" class="card__read">
+                  Read
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
                 </a>
               </div>
             </div>
@@ -147,65 +153,65 @@
 
         </div>
 
-        <!-- FULL-WIDTH CARD -->
-        <article class="article-card article-card--full">
-          <div class="article-card__top-bar"></div>
-          <div class="article-card__body">
-            <div class="article-card__content-main">
-              <div class="article-card__category">
-                <span class="tag">Agentic Capabilities</span>
-              </div>
-              <h2 class="article-card__title">
-                <a href="articles/hierarchy-of-agentic-capabilities.html">
-                  The Hierarchy of Agentic Capabilities: What Frontier Models Still Cannot Do
-                </a>
-              </h2>
-              <p class="article-card__excerpt">
+        <!-- Wide card -->
+        <article class="card card--wide">
+          <div class="card__body">
+            <div class="card__content">
+              <span class="card__cat">/ Agentic Capabilities</span>
+              <a href="articles/hierarchy-of-agentic-capabilities.html" class="card__title">
+                The Hierarchy of Agentic Capabilities: What Frontier Models Still Cannot Do
+              </a>
+              <p class="card__excerpt" style="margin-bottom: 0;">
                 An empirical study across 150 workplace tasks reveals a clear ordering of skills
-                that AI agents must master before they are deployable at enterprise scale.
+                that AI agents must master before enterprise-scale deployment is viable.
               </p>
             </div>
-            <div class="article-card__footer">
-              <span class="article-card__meta">April 2026</span>
-              <a href="articles/hierarchy-of-agentic-capabilities.html" class="article-card__read-link">
-                Read article &rarr;
+            <div class="card__action">
+              <span class="card__meta" style="display: block; margin-bottom: 10px;">Apr 2026 · 10 min</span>
+              <a href="articles/hierarchy-of-agentic-capabilities.html" class="card__read">
+                Read article
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
               </a>
             </div>
           </div>
         </article>
 
-      </div><!-- /.article-grid -->
-
-    </div><!-- /.container -->
+      </div>
+    </div>
   </main>
 
-  <!-- CTA BAND -->
-  <section class="cta-band" aria-label="Contact Arabic.AI">
+  <section class="cta-block" aria-label="Contact Arabic.AI">
     <div class="container">
-      <div class="cta-band__label label">Arabic.AI</div>
-      <h2 class="cta-band__title display">Building Arabic-First Enterprise AI</h2>
-      <p class="cta-band__body">
-        Arabic.AI develops Arabic-native language models and AI infrastructure for
-        government, financial services, and regulated industries. Request a technical briefing
-        with our team.
-      </p>
-      <a href="mailto:contact@arabic.ai" class="btn btn--primary">Request a Briefing</a>
+      <div class="cta-block__inner">
+        <div>
+          <div class="cta-block__index">/ Arabic.AI</div>
+          <h2 class="cta-block__title">Building Arabic-First<br><span class="accent">Enterprise AI.</span></h2>
+          <p class="cta-block__body">
+            Arabic.AI develops Arabic-native language models and AI infrastructure for
+            government, financial services, and regulated industries across the Arab world.
+            Request a technical briefing with our team.
+          </p>
+        </div>
+        <a href="mailto:contact@arabic.ai" class="btn btn-purple btn-lg">
+          Request a Briefing
+          <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
       <div class="site-footer__grid">
         <div>
-          <div class="site-footer__brand-name">Arabic.AI</div>
-          <p class="site-footer__brand-desc">
+          <div class="site-footer__brand">arabic<span class="accent">.ai</span></div>
+          <p class="site-footer__desc">
             Arabic-first large language models and enterprise AI systems for government,
             enterprises, and regulated industries across the Arab world.
           </p>
         </div>
         <div>
-          <div class="site-footer__col-title">Articles</div>
+          <div class="site-footer__col-label">/ Articles</div>
           <ul class="site-footer__links">
             <li><a href="articles/enterprise-ai-agents-still-fail.html">Enterprise AI Agents</a></li>
             <li><a href="articles/breaking-rl-performance-ceiling.html">RL Performance Ceiling</a></li>
@@ -214,7 +220,7 @@
           </ul>
         </div>
         <div>
-          <div class="site-footer__col-title">Arabic.AI</div>
+          <div class="site-footer__col-label">/ Arabic.AI</div>
           <ul class="site-footer__links">
             <li><a href="https://arabic.ai" target="_blank" rel="noopener">Website</a></li>
             <li><a href="mailto:contact@arabic.ai">Contact</a></li>
@@ -222,7 +228,7 @@
         </div>
       </div>
       <div class="site-footer__bottom">
-        <span>&copy; 2026 Arabic.AI. All rights reserved.</span>
+        <span>© 2026 Arabic.AI. All rights reserved.</span>
         <span>Technical articles published for informational purposes.</span>
       </div>
     </div>
