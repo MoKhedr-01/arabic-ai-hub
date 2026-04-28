@@ -92,14 +92,9 @@ img { display: block; max-width: 100%; }
 
 /* Wordmark text fallback (before SVG logo is added) */
 .site-nav__wordmark {
-  font-family: var(--display);
-  font-weight: 900;
-  font-size: 22px;
-  letter-spacing: -0.02em;
-  color: var(--ink);
+  display: block;
   line-height: 1;
 }
-.site-nav__wordmark .accent { color: var(--purple); }
 
 .site-nav__links {
   display: flex;
@@ -127,6 +122,7 @@ img { display: block; max-width: 100%; }
   border-radius: 999px;
   font-size: 13.5px !important;
   font-weight: 600 !important;
+  white-space: nowrap;
   transition: background .2s var(--ease) !important;
 }
 .site-nav__cta:hover { background: var(--purple) !important; }
@@ -245,6 +241,7 @@ img { display: block; max-width: 100%; }
   font: 600 14.5px var(--sans);
   cursor: pointer;
   text-decoration: none;
+  white-space: nowrap;
   transition: background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease);
   border: 0;
 }
@@ -526,14 +523,9 @@ img { display: block; max-width: 100%; }
 }
 
 .site-footer__brand {
-  font-family: var(--display);
-  font-weight: 900;
-  font-size: 20px;
-  letter-spacing: -0.02em;
-  color: var(--ink);
+  display: block;
   margin-bottom: 10px;
 }
-.site-footer__brand .accent { color: var(--purple); }
 
 .site-footer__desc {
   font-size: 13.5px;
